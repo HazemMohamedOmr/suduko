@@ -1,0 +1,9 @@
+<p>board works!</p>
+
+<section>
+  <div class="board">
+    <div *ngFor="let cell of puzzle" class="element">
+      <app-cell [value]="cell"></app-cell>
+    </div>
+  </div>
+</section>
