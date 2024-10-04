@@ -1,9 +1,14 @@
 <p>board works!</p>
-
-<section>
-  <div class="board">
-    <div *ngFor="let cell of puzzle" class="element">
-      <app-cell [value]="cell"></app-cell>
+<div class="container">
+  <section class="Game m-1 m-md-5">
+    <div class="board d-flex flex-wrap col-md-7">
+      <div *ngFor="let cell of puzzle" class="element d-flex flex-wrap"  >
+        <app-cell [value]="cell"></app-cell>
+      </div>
     </div>
-  </div>
-</section>
+    <div class="col-5">
+
+    </div>
+  </section>
+</div>
+

@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, HostListener, Input} from '@angular/core';
 
 @Component({
   selector: 'app-cell',
@@ -7,5 +7,10 @@ import {Component, Input} from '@angular/core';
 })
 export class CellComponent {
   @Input() value:number = 0;
+  isClicked:boolean = false;
 
+  @HostListener('click')
+  onClick() {
+    this.isClicked = !this.isClicked;
+  }
 }

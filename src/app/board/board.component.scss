@@ -1,6 +1,23 @@
+.game{
+
+}
 .board{
-  border: 3px black solid;
+  border: 2px #344861 solid;
 }
 .element{
-  border: 2px gray solid;
+  width: 11.111% !important;
+  border: 1px #d7dbe4 solid;
+}
+.element:nth-child(3n):not(:nth-child(9n)){
+  border-right: 2px #344861 solid !important;
+}
+.element:nth-child(n+19):nth-child(-n+27),
+.element:nth-child(n+46):nth-child(-n+54) {
+  border-bottom: 2px #344861 solid !important;
+}
+
+@media (min-width: 1400px) {
+  .container{
+    max-width: 1140px !important;
+  }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {PuzzleDataService} from "../services/puzzle-data.service";
 
 @Component({
@@ -15,4 +15,5 @@ export class BoardComponent {
   ngOnInit():void {
     this.puzzle = this.puzzledata.level1Easy;
   }
+
 }
